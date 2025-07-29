@@ -6,7 +6,12 @@ import React from "react";
 
 const Bottom = () => {
   return (
-    <div className="text-center m-8 text-green-700 font-bold text-xl">
+    <div
+      className="text-center m-8 text-green-700 font-bold text-xl cursor-pointer"
+      onClick={() => {
+        window.location.href = "mailto:surajbarnwalsuryavanshi@gmail.com";
+      }}
+    >
       <Typewriter
         words={["@surajbarnwalsuryavanshi"]}
         loop={0}
