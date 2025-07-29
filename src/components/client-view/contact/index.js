@@ -134,7 +134,9 @@ export default function ClientContactView() {
                   )
                 )}
                 {showSuccessMessage && (
-                  <p className="text-[14px] font-bold my-[8px]">Your message is successfully delivered !</p>
+                  <p className="text-[14px] font-bold my-[8px]">
+                    Your message is successfully delivered !
+                  </p>
                 )}
                 <div className="p-2 w-full">
                   <button

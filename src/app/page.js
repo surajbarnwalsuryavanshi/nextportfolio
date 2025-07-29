@@ -1,4 +1,5 @@
 import ClientAboutView from "@/components/client-view/about";
+import Bottom from "@/components/client-view/bottom";
 import ClientContactView from "@/components/client-view/contact";
 import ClientExperienceAndEducationView from "@/components/client-view/experience";
 import ClientHomeView from "@/components/client-view/home";
@@ -42,6 +43,7 @@ export default async function Home() {
         <ClientProjectView data={projectSectionData} />
         <ClientContactView />
       </div>
+      <Bottom />
     </>
   );
 }
