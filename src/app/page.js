@@ -3,9 +3,11 @@ import ClientContactView from "@/components/client-view/contact";
 import ClientExperienceAndEducationView from "@/components/client-view/experience";
 import ClientHomeView from "@/components/client-view/home";
 import ClientProjectView from "@/components/client-view/project";
+import dotenv from "dotenv";
+dotenv.config();
 
 async function extractAllDatas(currentSection) {
-  const res = await fetch(`http://localhost:3000/api/${currentSection}/get`, {
+  const res = await fetch(`${process.env.BASE_URL}/api/${currentSection}/get`, {
     method: "GET",
     cache: "no-store",
   });
