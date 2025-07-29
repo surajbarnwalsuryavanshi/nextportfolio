@@ -7,7 +7,7 @@ import React from "react";
 const Bottom = () => {
   return (
     <div
-      className="text-center m-8 mb-32 sm:mb-10 text-green-700 font-bold text-xl cursor-pointer"
+      className="text-center m-8 mb-16 sm:mb-10 text-green-700 font-bold text-xl cursor-pointer"
       onClick={() => {
         window.location.href = "mailto:surajbarnwalsuryavanshi@gmail.com";
       }}
