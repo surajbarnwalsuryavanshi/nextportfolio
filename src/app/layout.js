@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
-          backgroundImage: "radial-gradient(#00c850 1px, smokewhite 1px)",
+          backgroundImage: "radial-gradient(#00c850 1px, transparent 1px)",
           backgroundSize: "20px 20px",
           minHeight: "100vh",
         }}
