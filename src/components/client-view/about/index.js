@@ -128,7 +128,7 @@ export default function ClientAboutView({ data }) {
           <AnimationWrapper className="flex items-center w-full p-4">
             <motion.div
               variants={setVariants}
-              className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full"
+              className="grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 w-full"
             >
               {data?.skills.split(",").map((skill, index) => (
                 <motion.div
