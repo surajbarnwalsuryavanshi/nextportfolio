@@ -125,10 +125,10 @@ export default function ClientAboutView({ data }) {
               />
             </motion.div>
           </AnimationWrapper>
-          <AnimationWrapper className={"flex items-center w-full p-4"}>
+          <AnimationWrapper className="flex items-center w-full p-4">
             <motion.div
               variants={setVariants}
-              className="grid gap-4 grid-cols-3 h-full max-h-[200px] w-full"
+              className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full"
             >
               {data?.skills.split(",").map((skill, index) => (
                 <motion.div
@@ -136,7 +136,20 @@ export default function ClientAboutView({ data }) {
                   className="w-full flex justify-center items-center"
                   variants={skillItemVariant}
                 >
-                  <button className="whitespace-nowrap text-ellipsis overflow-hidden py-3 w-[160px] px-6 border-[2px] border-green-500 bg-[#fff] text-[#000] font-semibold rounded-lg text-xl tracking-widest cursor-pointer hover:shadow-[5px_5px_0px_rgba(0,0,0,1)] transition-all outline-none">
+                  <button
+                    className="
+            whitespace-nowrap text-ellipsis overflow-hidden
+            py-3 px-4
+            w-[120px] text-xs
+            sm:w-[140px] sm:text-sm
+            md:w-[160px] md:text-lg
+            border-[2px] border-green-500
+            bg-[#fff] text-[#000]
+            font-semibold rounded-lg tracking-widest
+            cursor-pointer transition-all outline-none
+            hover:shadow-[5px_5px_0px_rgba(0,0,0,1)]
+          "
+                  >
                     {skill}
                   </button>
                 </motion.div>
